@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="#809506e5">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15dp"
+            android:orientation="vertical"
+            android:backgroundTint="#90000000"
+            android:layout_marginLeft="5dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="20dp"
+        android:layout_centerHorizontal="true">
+
+        <!-- res/layout/item_contact.xml -->
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/gambar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/fotoprofil"
+                android:scaleType="centerCrop"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Andi Siregar"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/gambar"
+                android:layout_marginStart="16dp"/>
+
+            <TextView
+                android:id="@+id/infolanjut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More Information!"
+                android:textSize="14sp"
+                android:layout_below="@+id/nama"
+                android:layout_toEndOf="@+id/gambar"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="15dp"
+
+                android:backgroundTint="#F1F1F1"
+                android:layout_below="@id/infolanjut"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:id="@+id/infohari"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HARI 1"
+                    android:textSize="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    />
+
+                <!-- Tambahkan RatingBar di bawah tulisan "Teh Poci Akang" -->
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

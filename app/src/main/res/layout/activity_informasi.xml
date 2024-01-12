@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".informasi"
+    android:background="#809506e5">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/psychedelicheader"
+        android:orientation="vertical">
+        <!--tools:context=".home"> -->
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/btnback"
+        android:src="@drawable/backbutton"/>
+
+    <LinearLayout
+        android:id="@+id/kotakbiru"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15dp"
+            android:orientation="vertical"
+            android:backgroundTint="#90000000"
+            android:layout_marginLeft="55dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/psychedelicfont"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="INFORMASI"
+                android:textColor="#f7e001"
+                android:textSize="18dp" />
+        </androidx.cardview.widget.CardView>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="230dp"
+            android:src="@drawable/fotoprofil"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="390dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/angka1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. "
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Silahkan pastikan dengan benar jadwal dan tiket yang akan dibeli."
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/angka2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/angka1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. "
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Silahkan isi nama pesanan sesuai nama KTP."
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/angka3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/angka2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. "
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masukkan nomor telepon yang aktif."
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/angka4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/angka3">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4. "
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Untuk tiket dibagi beberapa jenis, yaitu tiket hari pertama, kedua, ketiga, dan tiket untuk 3 hari sekaligus."
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/angka5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/angka4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5. "
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Untuk tiket pertama, kedua, dan ketiga itu berlaku sesuai dengan hari tiket tersebut. Namun jika tiket 3 hari sekaligus 1 tiket itu bisa digunakan untuk hari pertama, kedua, dan ketiga."
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/angka6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/angka5">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6. "
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bagi yang sudah melakukan pemesanan, diharapkan untuk datang ke tempat penukaran tiket pada saat open gate dan menunjukkan tiket online tersebut untuk bisa mendapatkan tiket fisik."
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/moreinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="700dp"
+        android:layout_marginStart="120dp"
+        android:textSize="20dp"
+        android:text="More Information"
+        android:textColor="@color/black" />
+</FrameLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lamandepan"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#90000000">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/andifestlogo"/>
+            <EditText
+                android:id="@+id/Username"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="250dp"
+                android:background="#809506e5"
+                android:drawableLeft="@drawable/baseline_person_2_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="#80ffffff"
+                android:hint="Username"
+                android:textColorHint="#80ffffff" />
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/Username"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="10dp"
+                android:background="#809506e5"
+                android:drawableLeft="@drawable/baseline_mail_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="#80ffffff"
+                android:hint="Email"
+                android:textColorHint="#80ffffff" />
+
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/Email"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="10dp"
+                android:background="#809506e5"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="#80ffffff"
+                android:hint="Kata Sandi"
+                android:inputType="textPassword"
+                android:textColorHint="#80ffffff" />
+
+            <EditText
+                android:id="@+id/Repassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/Password"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="10dp"
+                android:background="#809506e5"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="#80ffffff"
+                android:hint="Masukkan ulang kata sandi"
+                android:inputType="textPassword"
+                android:textColorHint="#80ffffff" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/Repassword"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#9506e5"
+                android:text="DAFTAR"
+                android:textColor="#90ffffff"/>
+
+            <TextView
+                android:id="@+id/Haveacc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="Sudah punya akun ?"
+                android:textColor="#80ffffff" />
+
+            <TextView
+                android:id="@+id/Masuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/Haveacc"
+                android:layout_marginTop="10dp"
+                android:text="MASUK"
+                android:textColor="#90ffffff" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

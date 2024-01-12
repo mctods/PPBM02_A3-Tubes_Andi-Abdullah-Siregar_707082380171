@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <ImageView
+        android:id="@+id/fotoImageView"
+        android:layout_width="250dp"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/fotoprofil"/>
+
+
+
+    <TextView
+        android:id="@+id/namaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fotoImageView"
+        android:layout_marginTop="20dp"
+        android:text="Andi Siregar"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tempatLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namaTextView"
+        android:layout_marginTop="50dp"
+        android:text="Tempat :"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tempatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tempatLabelTextView"
+        android:layout_marginTop="0dp"
+        android:text="Stage 1"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tempatTextView"
+        android:background="#80000000"/>
+
+    <TextView
+        android:id="@+id/jadwalLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tempatTextView"
+        android:layout_marginTop="8dp"
+        android:text="Jadwal :"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/jadwalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jadwalLabelTextView"
+        android:layout_marginTop="8dp"
+        android:text="Hari 1  19.00-19.30"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"/>
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/jadwalTextView"
+        android:background="#80000000"/>
+
+</RelativeLayout>
